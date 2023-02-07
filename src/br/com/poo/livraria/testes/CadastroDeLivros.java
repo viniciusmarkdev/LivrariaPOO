@@ -18,10 +18,48 @@ public class CadastroDeLivros {
 		//automaticamente 
 		//O construtor  executa todo código que estiver dentro dele quando o ojeto é criado
 
+			
 		
-	
-		
-		
+		/*
+		 * 
+		 * Quando usamos um new ao criar um Objeto , por exemplo , 
+		 * um novo
+		   autor , não estamos passando sua varíaveis e métodos , mas
+		   apenas criando uma referência de um objeto e passando para
+		   váriavel  não seus  valores, 
+		   assim podemos acessar suas varíaveis e métodos em memória.
+		   
+		   Se , por exemplo , fizermos isso :
+		   
+		   
+		   Autor autor = new Autor();
+		   
+		   autor.nome = "Julio cesar"
+		  
+		   Livro livro = new Livro() ;
+		   
+		   livro.autor = autor ;
+		   
+		   E depois modificarmos o autor dessa forma :
+		   
+		   livro.autor.nome = "Marcos Vinicius"
+		   
+		   
+		   Qual será a saída  ao imprimir autor.nome
+		   ? Podemos pensar no primeiro nome , 
+		   mas será Marcos Vinicius . Quando passamos o autor
+		   para um Livro a referência do autor fica salva e podemos
+		   nos referênciar ao autor de duas formas pelo livro e pelo
+		   próprio autor.Assim o livro.autor tem o mesmo endereço de 
+		   memória que o autor.
+		   
+		   Fazer livro.autor.nome é a mesma coisa de fazer autor.nome
+		   
+		   
+		   
+
+		 * 
+		 * */
 		
 		
 		

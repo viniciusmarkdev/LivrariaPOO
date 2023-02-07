@@ -93,7 +93,12 @@ public class NovidadesDoJava8 {
 		 * o Java 8 introduziu o método sort na interface List .Assim , podemos fazer
 		 * igual a baixo:
 		 * 
-		 * livros.sort(new Comparator<Livro>(){  @ Override public int compare(Livro l1 , Livro l2 ){ return
+		 * livros.sort(new Comparator<Livro>(){ 
+		 *  
+		 *  @ Override public int compare(Livro l1 , Livro l2 )
+		 *  
+		 *  { return
+		 *
 		 * l1.getNome().compareTo(l2.getNome());
 		 * 
 		 * }
@@ -147,6 +152,7 @@ public class NovidadesDoJava8 {
 			return l1.getNome().compareTo(l2.getNome());
 			});
 		
+
 		
 		/*
 		 *
@@ -325,7 +331,7 @@ public class NovidadesDoJava8 {
      livros.stream().filter(l->l.getNome().contains("Java"))
      .forEach(l->System.out.println(l.getNome()));
      
-   
+    
      
      /*
       * 
